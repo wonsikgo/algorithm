@@ -45,13 +45,10 @@ class Solution {
                 currentBridgeWeight += currentTruckWeight;
             }
         }
-
-
         return answer += bridge_length;                                     //마지막트럭이 다리를 지난시간은 while 에서 계산하지 않아서 다리의길이만큼 더해준다.
     }
 
 }
-
 
 //트럭 클래스 정의
 class Truck {
