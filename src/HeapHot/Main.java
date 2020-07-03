@@ -10,7 +10,7 @@ public class Main {
 
         int[] scrovile = {1,2,3,9,10,12};
         Solution solution = new Solution();
-        int result =solution.solution(scrovile,110);
+        int result =solution.solution(scrovile,7);
         System.out.println(result);
 
 
