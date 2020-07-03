@@ -1,5 +1,8 @@
 package ArrayGreatNumber;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 //정렬 - 가장 큰 수
 public class Main {
 
@@ -22,17 +25,11 @@ class Solution {
             numberString[i] = String.valueOf(numbers[i]);
         }
 
-        for(int i = 0; i < numberString.length; i++) {
-            for(int j = 0; j < numberString.length - i - 1; j++) {
-                int firstNumber = numberString[j].charAt(numberString[j].length()-1);
-                int secondNumber = numberString[j+1].charAt(numberString[j+1].length()-1);
-                if(firstNumber < secondNumber){
-                    String temp;
-                    temp = numberString[j+1];
-                    numberString[j+1] = numberString[j];
-                    numberString[j] = temp;
-                }
-            }
+        Arrays.sort(numberString, (a,b)->(b+a).compareTo(a+b));     //compareTo 값이 양수면 앞,뒤 값을 교체 ex)30+3와 3+30인경우 30+3이 작아서 -1을 리턴
+                                                                    //ex) 34+30와 30+34는 34+30이 더 크기 때문에 앞, 뒤 값 교체
+
+        if(numberString[0].equals("0")) {
+            return "0";
         }
 
         for(String result : numberString) {
