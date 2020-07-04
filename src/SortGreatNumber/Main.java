@@ -1,7 +1,6 @@
-package ArrayGreatNumber;
+package SortGreatNumber;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 //정렬 - 가장 큰 수
 public class Main {
