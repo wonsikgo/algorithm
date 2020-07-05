@@ -1,8 +1,6 @@
-package WorkoutClothes;
+package GreedyWorkoutClothes;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 //탐욕법 - 체육복
 public class Main {
