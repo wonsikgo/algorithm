@@ -1,6 +1,6 @@
 package Example;
 
-//Heap - 더 맵게
+//프로그래머스 lv1 - 문자열 다루기 기본
 public class Main {
 
     public static void main(String[] args) {
